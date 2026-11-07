@@ -14,3 +14,5 @@ AI 课堂笔记需要用户自己的 DeepSeek API Key；仅在选择 AI 时发�
 0.1.0 为测试版，尚未完成发行者签名；Mac 尚未做 Apple 公证，系统可能阻止打开。
 此仓库仅用于发行安装包、说明、校验和与第三方组件源码。
 第三方源码包 `Keye-Media-Sources.zip` 与安装包在同一 Release，包含匹配的 FFmpeg/x264 源码、许可及构建脚本。
+
+复现媒体组件：解压源码包后，将 `sources/build-media.sh` 复制到新建的 `scripts/build-media.sh`，在其上一层运行 `bash scripts/build-media.sh`。需要 C 编译器、make、pkg-config；Windows 使用 MSYS2 MINGW64。固定的上游源码和 SHA-256 校验值已写入脚本。
